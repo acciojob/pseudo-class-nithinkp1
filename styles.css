@@ -1,1 +1,21 @@
 /*  your css code here. If applicable */
+#container{
+	margin:20px;
+	position:relative;
+}
+#container::before {
+  content: "This is before content";
+  color: #f00;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Insert content after */
+#container::after {
+  content: "This is after content";
+  color: #f00;
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
